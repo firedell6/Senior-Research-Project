@@ -1,5 +1,5 @@
 #TODO
-#Integrate into TCP/IP Messaging Application
+#Integrate into TCP/IP Messaging Application or build my own within this code
 
 #Testing of mesh network connection
 import time
