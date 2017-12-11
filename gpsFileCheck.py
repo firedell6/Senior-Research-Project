@@ -6,7 +6,9 @@ import gmplot
 import codecs
 
 #Insert Linux folder to check in var x
-x = '/Users/justindraughon/Google Drive/Lipscomb/Senior Fall Semester/CCT Senior Seminar/Python Programming/gpsTest/'
+# Test for MacBook Pro Directory
+#x = '/Users/justindraughon/Google Drive/Lipscomb/Senior Fall Semester/CCT Senior Seminar/Python Programming/gpsTest/'
+x = "/home/pi/Desktop/"
 
 #Names of processed files (list car)
 nameList = []
@@ -54,11 +56,13 @@ while True:
                 pathlon = tuple(longData)
 
                 gmap = gmplot.GoogleMapPlotter(36.105632000, -86.799990000, 16.9)
+                #Declares mapping markers
+                gmap.coloricon = "http://www.googlemapsmarkers.com/v1/%s/"
 
                 #Takes in a tuple
                 gmap.scatter(pathlat, pathlon, 'k', marker=True)
 
-                gmap.draw('map.html')
+                gmap.draw('/var/www/html/index.html')
 
 
 
